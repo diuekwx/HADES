@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YERIS HADES COLLECTION</title>
+    <!--basically had to download font thing from internet, extract, install, then link it here to use it-->
+    <link href='CaesarDressing-Regular.ttf' rel='stylesheet'>
+    <style>
+        #mainPage{
+            font-size: 48px;
+            background: url(https://wallpaperaccess.com/full/4870509.jpg);
+            background-size: cover;
+            background-position: center;
+            height: 1000px;  
+        }
+        /* yay no white space around the divs , test to see if work for a div underneath */
+        body {
+            margin: 0px;
+        }
+        #title{
+            background-color:white;
+            width: 525px;
+            text-align: center;
+            margin: auto;
+            /* having position: relative lets you change the positoin of something
+            since, we want to move down, we use top: 300px, moves the text
+            300px down. essentially relative allows the position of the element to change */
+            top: 400px;
+            position: relative;
+            color: white;
+            background-color: rgb(121, 7, 7);
+            font-family: 'Caesar Dressing';
+            border: 2px solid orangered;
+        }
+        .borderedWord{
+            /*makes a border around the word :3 */
+            -webkit-text-stroke: 2px rgb(218, 3, 3);
+
+        }
+        #navBar{
+            font-family: 'Caesar Dressing';
+            font-size: 36px;
+            background-color: black;
+            border-radius: 10px;
+            top: 550px;
+            position: relative;
+            display: inline-block;
+            border: 0.10px solid orangered;
+
+            
+        }
+        .parent{
+            text-align: center;
+        }
+        /* gets rid of the line underneath */
+        a {
+            color: orangered;
+            text-decoration: none;
+        }
+        
+        li {
+            display: inline-block;
+            margin-right: 40px;
+            
+            
+        }
+        ul {
+            justify-content: center;
+            display: flex;
+            
+        }
+        ul li a:hover{
+            background-color: rgba(255, 174, 66);
+            border: 1px solid orangered;
+            border-radius: 15px;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="mainPage">
+        <header id="title">
+            <span class="borderedWord"> YERI'S HADES COLLECTION </span> 
+        </header>
+        <!-- having a parent allows for the text to be centered, while having the div inside be inline-block,
+        which automatically sets the width to the size of the text-->
+        <div class="parent"> 
+            <div id="navBar" > 
+                <nav>
+                    <ul>
+                        <!--<li> is used for lists, represent an item in a list, ul is unordered list, by having in incline
+                            block, its all on same line, and adding margin-right separates space! -->
+                        <li> <a href="sword.html"> Stygian Blade </a> </li> 
+                        <li> <a href="spear.html"> Eternal Spear </a> </li>
+                        <li> <a href="shield.html"> Shield of Chaos </a> </li>
+                        <li> <a href="bow.html"> Heart-Seeking Bow </a> </li>
+                        <li> <a href="fist.html"> Twin Fists of Malphon </a> </li>
+                        <li> <a href="gun.html"> Adamant Rail </a>  </li>
+                    </ul>
+            
+                </nav>
+            </div>
+        </div>
+        
+    </div>
+    
+</body>
+</html>
